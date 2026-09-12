@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>One More Thing ❤️</title>
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            background: #080808;
+
+            color: white;
+
+            font-family: Georgia, serif;
+
+            text-align: center;
+
+        }
+
+
+        .container {
+
+            width: 90%;
+
+            max-width: 800px;
+
+            margin: auto;
+
+            padding: 70px 0;
+
+        }
+
+
+        h1 {
+
+            color: #e6002d;
+
+            font-size: 42px;
+
+        }
+
+
+        .video {
+
+            margin-top: 40px;
+
+            background: #111;
+
+            padding: 10px;
+
+            border-radius: 12px;
+
+            border: 1px solid #550015;
+
+        }
+
+
+        video {
+
+            width: 100%;
+
+            border-radius: 8px;
+
+        }
+
+
+        .message {
+
+            margin-top: 45px;
+
+            line-height: 1.9;
+
+            color: #ccc;
+
+            font-size: 18px;
+
+        }
+
+
+        .heart {
+
+            font-size: 55px;
+
+            color: #e6002d;
+
+        }
+
+
+        /* NAVIGATION */
+
+        .navigation {
+
+            margin-top: 50px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .navigation button {
+
+            padding: 12px 28px;
+
+            border-radius: 25px;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+        }
+
+
+        /* PREVIOUS BUTTON */
+
+        .previous {
+
+            background: #b00024;
+
+            color: white;
+
+            border: 1px solid #e6002d;
+
+        }
+
+
+        .previous:hover {
+
+            background: #e6002d;
+
+        }
+
+
+        /* LOG OUT BUTTON */
+
+        .logout {
+
+            margin-top: 0;
+
+            background: transparent;
+
+            color: #ff6b81;
+
+            border: 1px solid #8b0015;
+
+        }
+
+
+        .logout:hover {
+
+            background: #b00024;
+
+            color: white;
+
+            border-color: #e6002d;
+
+        }
+
+
+        /* PHONE */
+
+        @media(max-width:600px) {
+
+            h1 {
+
+                font-size: 35px;
+
+            }
+
+
+            .message {
+
+                font-size: 16px;
+
+            }
+
+
+            .navigation {
+
+                gap: 10px;
+
+            }
+
+
+            .navigation button {
+
+                padding: 11px 22px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <div class="heart">
+
+        ❤️
+
+    </div>
+
+
+    <h1>
+
+        And Finally...
+
+    </h1>
+
+
+    <!-- VIDEO -->
+
+    <div class="video">
+
+        <video controls playsinline>
+
+            <source
+            src="ourvideo.mp4"
+            type="video/mp4">
+
+            Your browser does not
+            support this video.
+
+        </video>
+
+    </div>
+
+
+    <!-- MESSAGE -->
+
+    <div class="message">
+
+
+        <p>
+
+            If you're watching this,
+
+            you made it to the end. ❤️
+
+        </p>
+
+
+        <p>
+
+            From a random conversation
+
+            about serial killers...
+
+        </p>
+
+
+        <p>
+
+            to 365 days of memories,
+
+            laughter and love.
+
+        </p>
+
+
+        <p>
+
+            Thank you for being part
+
+            of my life.
+
+        </p>
+
+
+        <p>
+
+            I can't wait to see
+
+            what the next chapter
+
+            brings for us.
+
+        </p>
+
+
+        <h2 style="color:#e6002d;">
+
+            Happy 1st Anniversary ❤️
+
+        </h2>
+
+
+        <p>
+
+            I love you.
+
+            <br>
+
+            Always. ♾️
+
+        </p>
+
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <div class="navigation">
+
+
+        <button
+            class="previous"
+            onclick="location.href='anniversary.html'">
+
+            ← Previous
+
+        </button>
+
+
+        <button
+            class="logout"
+            onclick="logout()">
+
+            🔐 Log Out
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+function logout() {
+
+    window.location.href =
+    "index.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

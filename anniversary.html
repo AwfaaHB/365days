@@ -1,0 +1,327 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Happy 1st Anniversary ❤️</title>
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #080808;
+            color: white;
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        h1 {
+            color: #e6002d;
+            font-size: 45px;
+        }
+
+        .greeting {
+            max-width: 650px;
+            margin: 30px auto 50px;
+            line-height: 1.8;
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        /* PHOTO GRID */
+
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* PHOTO BOX */
+
+        .photo {
+            background: #111;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid #550015;
+        }
+
+        /* SQUARE PHOTOS */
+
+        .photo img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* CAPTION */
+
+        .caption {
+            padding: 12px 5px;
+            color: #ff9aaa;
+            font-size: 15px;
+        }
+
+        /* NAVIGATION */
+
+        .navigation {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .navigation button {
+            margin-top: 0;
+            padding: 13px 28px;
+            background: #b00024;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .navigation button:hover {
+            background: #e6002d;
+        }
+
+        /* PHONE */
+
+        @media(max-width:600px) {
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .greeting {
+                font-size: 16px;
+            }
+
+            .photos {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+            }
+
+            .photo img {
+                aspect-ratio: 1 / 1;
+            }
+
+            .navigation {
+                gap: 10px;
+            }
+
+            .navigation button {
+                padding: 12px 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- HEART -->
+
+    <div style="font-size:50px;">
+        ❤️
+    </div>
+
+
+    <!-- TITLE -->
+
+    <h1>
+        Happy 1st Anniversary
+    </h1>
+
+
+    <!-- GREETING -->
+
+    <div class="greeting">
+
+        <p>
+            One whole year with you. ❤️
+        </p>
+
+        <p>
+            Thank you for all the laughs,
+            memories, little moments,
+            and everything in between.
+        </p>
+
+        <p>
+            I'm so grateful that somehow,
+            our story started with a
+            conversation about serial killers
+            and ended up here. 😂
+        </p>
+
+        <p>
+            Here's to our first year,
+            and hopefully many more to come.
+        </p>
+
+        <strong>
+            I love you. ❤️
+        </strong>
+
+    </div>
+
+
+    <!-- PHOTO GRID -->
+
+    <div class="photos">
+
+
+        <!-- PHOTO 1 -->
+
+        <div class="photo">
+
+            <img src="photo1.jpg">
+
+            <div class="caption">
+                The beginning of us ❤️
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 2 -->
+
+        <div class="photo">
+
+            <img src="photo2.jpg">
+
+            <div class="caption">
+                One of my favourite memories 🥹
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 3 -->
+
+        <div class="photo">
+
+            <img src="photo3.jpg">
+
+            <div class="caption">
+                Another moment I'll always keep ❤️
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 4 -->
+
+        <div class="photo">
+
+            <img src="photo4.jpg">
+
+            <div class="caption">
+                And many more to come ♾️
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 5 -->
+
+        <div class="photo">
+
+            <img src="photo5.jpg">
+
+            <div class="caption">
+                Another memory with you ❤️
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 6 -->
+
+        <div class="photo">
+
+            <img src="photo6.jpg">
+
+            <div class="caption">
+                More memories to cherish 🥹
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- NAVIGATION BUTTONS -->
+
+    <div class="navigation">
+
+        <button
+            onclick="location.href='index.html'">
+
+            ← Previous
+
+        </button>
+
+
+        <button
+            onclick="location.href='ending.html'">
+
+            Next → ❤️
+
+        </button>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
+```
+
+Make sure your folder now contains:
+
+```text
+index.html
+anniversary.html
+ending.html
+
+photo1.jpg
+photo2.jpg
+photo3.jpg
+photo4.jpg
+photo5.jpg
+photo6.jpg
+
+ourvideo.mp4
+```
+
+On **desktop**, the 6 photos will appear as **3 rows × 2 photos**. On **phone**, they'll stack one per row.
