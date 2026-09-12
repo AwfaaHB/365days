@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Our Little Secret ❤️</title>
+    <title>365Days❤️</title>
 
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
@@ -25,10 +25,174 @@
             font-family: Georgia, serif;
 
             text-align: center;
+
+            overflow: hidden;
         }
 
+
+        /* =================================
+           FULL SCREEN FLOATING BACKGROUND
+           ================================= */
+
+        .floating-background {
+
+            position: fixed;
+
+            inset: 0;
+
+            overflow: hidden;
+
+            pointer-events: none;
+
+            z-index: 0;
+
+        }
+
+
+        .floating {
+
+            position: absolute;
+
+            bottom: -80px;
+
+            font-size: 25px;
+
+            opacity: 0.18;
+
+            animation: floatUp linear infinite;
+
+        }
+
+
+        @keyframes floatUp {
+
+            0% {
+
+                transform: translateY(0) rotate(0deg);
+
+                opacity: 0;
+
+            }
+
+
+            10% {
+
+                opacity: 0.18;
+
+            }
+
+
+            50% {
+
+                opacity: 0.22;
+
+            }
+
+
+            90% {
+
+                opacity: 0.18;
+
+            }
+
+
+            100% {
+
+                transform: translateY(-120vh) rotate(20deg);
+
+                opacity: 0;
+
+            }
+
+        }
+
+
+        /* DIFFERENT POSITIONS + SPEEDS */
+
+        .floating:nth-child(1) {
+            left: 2%;
+            animation-duration: 9s;
+        }
+
+        .floating:nth-child(2) {
+            left: 8%;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+
+        .floating:nth-child(3) {
+            left: 15%;
+            animation-duration: 10s;
+            animation-delay: 5s;
+        }
+
+        .floating:nth-child(4) {
+            left: 23%;
+            animation-duration: 14s;
+            animation-delay: 1s;
+        }
+
+        .floating:nth-child(5) {
+            left: 31%;
+            animation-duration: 11s;
+            animation-delay: 4s;
+        }
+
+        .floating:nth-child(6) {
+            left: 40%;
+            animation-duration: 13s;
+            animation-delay: 7s;
+        }
+
+        .floating:nth-child(7) {
+            left: 48%;
+            animation-duration: 9s;
+            animation-delay: 3s;
+        }
+
+        .floating:nth-child(8) {
+            left: 56%;
+            animation-duration: 12s;
+            animation-delay: 6s;
+        }
+
+        .floating:nth-child(9) {
+            left: 64%;
+            animation-duration: 10s;
+            animation-delay: 1s;
+        }
+
+        .floating:nth-child(10) {
+            left: 72%;
+            animation-duration: 14s;
+            animation-delay: 5s;
+        }
+
+        .floating:nth-child(11) {
+            left: 80%;
+            animation-duration: 11s;
+            animation-delay: 2s;
+        }
+
+        .floating:nth-child(12) {
+            left: 88%;
+            animation-duration: 13s;
+            animation-delay: 7s;
+        }
+
+        .floating:nth-child(13) {
+            left: 95%;
+            animation-duration: 10s;
+            animation-delay: 4s;
+        }
+
+
+        /* LOGIN BOX */
+
         .box {
+
             width: 85%;
+
             max-width: 400px;
 
             padding: 40px 25px;
@@ -41,19 +205,32 @@
 
             box-shadow:
             0 0 25px rgba(255,0,40,0.25);
+
+            position: relative;
+
+            z-index: 2;
+
         }
+
 
         h1 {
+
             color: #e6002d;
+
         }
 
+
         p {
+
             color: #bbb;
 
             line-height: 1.6;
+
         }
 
+
         input {
+
             width: 90%;
 
             padding: 12px;
@@ -71,9 +248,12 @@
             text-align: center;
 
             font-size: 16px;
+
         }
 
+
         button {
+
             margin-top: 15px;
 
             padding: 12px 25px;
@@ -89,18 +269,25 @@
             cursor: pointer;
 
             font-size: 16px;
+
         }
+
 
         button:hover {
+
             background: #e6002d;
+
         }
 
+
         #error {
+
             display: none;
 
             color: #ff526d;
 
             margin-top: 15px;
+
         }
 
     </style>
@@ -111,20 +298,61 @@
 <body>
 
 
+<!-- =================================
+     FLOATING BACKGROUND
+     ================================= -->
+
+<div class="floating-background">
+
+    <div class="floating">👩🏻 ❤️</div>
+
+    <div class="floating">👨🏻 💕</div>
+
+    <div class="floating">👩🏻‍❤️‍👨🏻</div>
+
+    <div class="floating">❤️</div>
+
+    <div class="floating">👨🏻 ❤️</div>
+
+    <div class="floating">💕</div>
+
+    <div class="floating">👩🏻 ❤️</div>
+
+    <div class="floating">👨🏻‍❤️‍👩🏻</div>
+
+    <div class="floating">💗</div>
+
+    <div class="floating">👩🏻‍❤️‍👨🏻</div>
+
+    <div class="floating">❤️</div>
+
+    <div class="floating">👨🏻 💕</div>
+
+    <div class="floating">👩🏻 ❤️</div>
+
+</div>
+
+
+<!-- LOGIN BOX -->
+
 <div class="box">
+
 
     <div style="font-size:50px;">
         ❤️
     </div>
 
+
     <h1>
-        A Little Secret
+        Hello Mr. Nick
     </h1>
+
 
     <p>
         There's something waiting
         for you inside.
     </p>
+
 
     <p>
         Enter the password to continue.
@@ -142,13 +370,18 @@
 
 
     <button onclick="checkPassword()">
+
         Open ❤️
+
     </button>
 
 
     <p id="error">
+
         Wrong password 😭
+
     </p>
+
 
 </div>
 
@@ -159,6 +392,7 @@ function checkPassword() {
 
     const password =
     document.getElementById("password").value;
+
 
     if (password === "19092025") {
 
